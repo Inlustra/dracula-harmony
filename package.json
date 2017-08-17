@@ -1,0 +1,12 @@
+{
+  "name": "dracula-harmony",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/node-sass -w main.scss ~/.config/Harmony/Themes/Dracula.css",
+    "build": "./node_modules/.bin/node-sass main.scss dracula-harmony.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

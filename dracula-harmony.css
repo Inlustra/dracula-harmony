@@ -1,0 +1,100 @@
+#header {
+  border-color: #21222C;
+  background: #282a36;
+  color: #f8f8f2; }
+  #header #playerControls #playerFavBtn.active .icon {
+    color: #ff5555; }
+  #header #playerControls #playerFavBtn.active .icon:hover {
+    color: #FF6E67; }
+  #header #playerControls .icon {
+    color: #BFBFBF; }
+  #header #playerControls .icon:hover {
+    color: #f8f8f2; }
+  #header #playerTrackTitle {
+    color: #f8f8f2; }
+  #header #playerTrackArtist {
+    color: #6272a4; }
+  #header #playerProgress {
+    background: #191A21; }
+  #header #playerBufferBar {
+    background: #424450; }
+  #header #playerProgressBar {
+    background: #bd93f9; }
+  #header #playerTime {
+    color: #6272a4; }
+  #header #searchBar input {
+    background: #282a36;
+    color: #f8f8f2;
+    border-color: #6272a4;
+    border-radius: none; }
+    #header #searchBar input::placeholder {
+      color: #6272a4; }
+  #header #searchBar .icon {
+    color: #6272a4; }
+
+#footer {
+  background: #282a36;
+  color: #f8f8f2; }
+
+#sidebar {
+  background: #21222C;
+  color: #f8f8f2; }
+  #sidebar .serviceTitle {
+    font-weight: bold;
+    color: #6272a4; }
+  #sidebar .playlistTitle {
+    color: #f8f8f2; }
+    #sidebar .playlistTitle.active {
+      background-color: #343746; }
+    #sidebar .playlistTitle .icon.icon-play.playing {
+      color: #50fa7b; }
+
+#trackList, #track_body, #trackListTable {
+  background: #282a36;
+  color: #f8f8f2; }
+  #trackList .listTrack, #track_body .listTrack, #trackListTable .listTrack {
+    color: #f8f8f2; }
+    #trackList .listTrack.selected, #track_body .listTrack.selected, #trackListTable .listTrack.selected {
+      color: #f8f8f2;
+      background: #44475a !important; }
+    #trackList .listTrack .icon, #track_body .listTrack .icon, #trackListTable .listTrack .icon {
+      color: #50fa7b; }
+  #trackList .listTrack:nth-child(odd), #track_body .listTrack:nth-child(odd), #trackListTable .listTrack:nth-child(odd) {
+    background: #21222C; }
+  #trackList .listTrack:nth-child(even), #track_body .listTrack:nth-child(even), #trackListTable .listTrack:nth-child(even) {
+    background: #282a36; }
+  #trackList th, #track_body th, #trackListTable th {
+    background: #282a36;
+    color: #f8f8f2;
+    border-color: #191A21; }
+
+#footer {
+  border-color: #bd93f9;
+  background: #191A21; }
+  #footer .footerBtn {
+    fill: #f8f8f2;
+    color: #f8f8f2; }
+    #footer .footerBtn.active {
+      color: #50fa7b; }
+  #footer .player_volume_range::-webkit-slider-runnable-track {
+    background: #44475a;
+    color: #44475a; }
+  #footer .player_volume_range::-webkit-slider-thumb {
+    background: #50fa7b;
+    color: #50fa7b; }
+
+::-webkit-scrollbar {
+  width: 4px;
+  background: #191A21; }
+
+::-webkit-scrollbar:hover {
+  background: #21222C; }
+
+::-webkit-scrollbar-thumb {
+  background: #6272a4;
+  background-clip: padding-box;
+  border: none;
+  min-height: 10px; }
+
+::-webkit-scrollbar-thumb:active {
+  background: #6272a4; }

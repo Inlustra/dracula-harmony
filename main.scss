@@ -1,0 +1,201 @@
+$BACKGROUND:	#282a36;
+
+$BACKGROUND_LIGHTER: #424450;
+$BACKGROUND_LIGHT: #343746;
+$BACKGROUND_DARK: #21222C;
+$BACKGROUND_DARKER: #191A21;
+
+$CURRENT_LINE:	#44475a;
+$SELECTION:	#44475a;
+$FOREGROUND:	#f8f8f2;
+$COMMENT:	#6272a4;
+$CYAN:	#8be9fd;
+$GREEN:	#50fa7b;
+$ORANGE:	#ffb86c;
+$PINK:	#ff79c6;
+$PURPLE:	#bd93f9;
+$RED:	#ff5555;
+$YELLOW:	#f1fa8c;
+
+$COLOR7 : #BFBFBF;
+$COLOR8 : #575757;
+$COLOR9 : #FF6E67;
+$COLOR10: #5AF78E;
+$COLOR11: #F4F99D;
+$COLOR12: #CAA9FA;
+$COLOR13: #FF92D0;
+$COLOR14: #9AEDFE;
+$COLOR15: #F8F8F2;
+
+#header {
+    border-color: $BACKGROUND_DARK;
+    background: $BACKGROUND;
+    color: $FOREGROUND;
+
+    #playerControls {
+
+        #playerFavBtn.active .icon {
+            color: $RED;
+        }
+
+        #playerFavBtn.active .icon:hover {
+            color: $COLOR9;
+        }
+
+        .icon {
+            color: $COLOR7;
+        }
+
+        .icon:hover {
+            color: $FOREGROUND;
+        }
+    }
+
+    #playerTrackTitle {
+        color: $FOREGROUND;
+    }
+
+    #playerTrackArtist {
+        color: $COMMENT;
+    }
+
+    #playerProgress {
+        background: $BACKGROUND_DARKER;
+    }
+
+    #playerBufferBar {
+        background: $BACKGROUND_LIGHTER;
+    }
+
+    #playerProgressBar {
+        background: $PURPLE;
+    }
+
+    #playerTime {
+        color: $COMMENT;
+    }
+
+    #searchBar {
+        input {
+            background: $BACKGROUND;
+            color: $FOREGROUND;
+            border-color:  $COMMENT;
+            border-radius: none;
+
+            &::placeholder {
+                color: $COMMENT;
+            }
+        }
+
+        .icon {
+            color: $COMMENT;
+        }
+    }
+
+}
+#footer {
+    background: $BACKGROUND;
+    color: $FOREGROUND;
+}
+
+#sidebar {
+    background: $BACKGROUND_DARK;
+    color: $FOREGROUND;
+
+    .serviceTitle {
+        font-weight: bold;
+        color: $COMMENT;
+    }
+
+    .playlistTitle {
+        color: $FOREGROUND;
+
+        &.active {
+            background-color: $BACKGROUND_LIGHT;
+        }
+
+        .icon.icon-play.playing {
+            color: $GREEN;
+        }
+    }
+}
+
+
+#trackList, #track_body, #trackListTable {
+    background: $BACKGROUND;
+    color: $FOREGROUND;
+
+    .listTrack {
+        color: $FOREGROUND;
+
+        &.selected {
+            color: $FOREGROUND;
+            background: $SELECTION !important;
+        }
+
+        .icon {
+            color: $GREEN;
+        }
+    }
+
+    .listTrack:nth-child(odd) {
+        background: $BACKGROUND_DARK;
+    }
+
+    .listTrack:nth-child(even) {
+        background: $BACKGROUND;
+    }
+
+    th {
+        background: $BACKGROUND;
+        color: $FOREGROUND;
+        border-color: $BACKGROUND_DARKER;
+    }
+}
+
+#footer {
+    border-color: $PURPLE;
+    background: $BACKGROUND_DARKER;
+
+    .footerBtn {
+        fill: $FOREGROUND;
+        color: $FOREGROUND;
+
+        &.active {
+            color: $GREEN;
+        }
+    }
+
+    .player_volume_range {
+
+        &::-webkit-slider-runnable-track {
+            background: $CURRENT_LINE;
+            color: $CURRENT_LINE;
+        }
+
+        &::-webkit-slider-thumb {
+            background: $GREEN;
+            color: $GREEN;
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    background: $BACKGROUND_DARKER;
+}
+
+::-webkit-scrollbar:hover {
+    background: $BACKGROUND_DARK;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $COMMENT;
+    background-clip: padding-box;
+    border: none;
+    min-height: 10px;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: $COMMENT;
+}
