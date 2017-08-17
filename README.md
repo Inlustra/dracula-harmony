@@ -1,5 +1,7 @@
 # A Dracula theme for the [Harmony Music Client](https://getharmony.xyz/)
 
+Pretty basic and overall could do with some "Finessing" and hover animations.
+
 Based on the dracula colour scheme at [https://draculatheme.com/](https://draculatheme.com/)
 
 ![Example][ExampleImage]
